@@ -5,5 +5,7 @@ const MatrixGenerator = (valueInMiddle: number) => {
     return [];
   }
 
-  return [1];
+  if (valueInMiddle === 1) {
+    return [1];
+  }
 };
