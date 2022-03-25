@@ -1,3 +1,3 @@
 export { MatrixGenerator };
 
-const MatrixGenerator = (valueInMiddle: number) => null;
+const MatrixGenerator = (valueInMiddle: number) => [];
