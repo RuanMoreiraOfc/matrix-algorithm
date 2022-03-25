@@ -16,4 +16,12 @@ describe('Matrix Generator', () => {
 
     expect(matrix).toEqual([]);
   });
+
+  it('should return an one by one array when a number equal to one is passed', () => {
+    const valueInMiddle = 1;
+
+    const matrix = MatrixGenerator(valueInMiddle);
+
+    expect(matrix).toEqual([1]);
+  });
 });
