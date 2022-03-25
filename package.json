@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "test": "tsc -p ./tsconfig.json --outDir ./dist && jest dist/test",
+    "test:dev": "tsc-watch -p ./tsconfig.json --outDir ./dist --onSuccess \"jest dist/test/index.test.js\""
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
