@@ -9,14 +9,6 @@ const MatrixGenerator = (valueInMiddle: number) => {
     return [1];
   }
 
-  if (valueInMiddle === 2) {
-    const middleIndex = valueInMiddle - 1;
-    const { matrix } = createMatrix(valueInMiddle)(1);
-    matrix[middleIndex][middleIndex] = 2;
-
-    return matrix;
-  }
-
   const { queueCount, matrix } = createMatrix(valueInMiddle)(1);
 
   let fromQueueCountToZero = queueCount;
