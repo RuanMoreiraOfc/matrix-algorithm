@@ -24,4 +24,16 @@ describe('Matrix Generator', () => {
 
     expect(matrix).toEqual([1]);
   });
+
+  it('should return an three by three matrix when a number equal to two is passed', () => {
+    const valueInMiddle = 2;
+
+    const matrix = MatrixGenerator(valueInMiddle);
+
+    expect(matrix).toEqual([
+      [1, 1, 1],
+      [1, 2, 1],
+      [1, 1, 1],
+    ]);
+  });
 });
