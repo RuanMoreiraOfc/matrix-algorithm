@@ -8,4 +8,12 @@ describe('Matrix Generator', () => {
 
     expect(matrix).toEqual([]);
   });
+
+  it('should return an empty array when a number equal to zero is passed', () => {
+    const valueInMiddle = 0;
+
+    const matrix = MatrixGenerator(valueInMiddle);
+
+    expect(matrix).toEqual([]);
+  });
 });
