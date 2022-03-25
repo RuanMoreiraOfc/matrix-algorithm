@@ -36,4 +36,18 @@ describe('Matrix Generator', () => {
       [1, 1, 1],
     ]);
   });
+
+  it('should return an five by five matrix when a number equal to three is passed', () => {
+    const valueInMiddle = 3;
+
+    const matrix = MatrixGenerator(valueInMiddle);
+
+    expect(matrix).toEqual([
+      [1, 1, 1, 1, 1],
+      [1, 2, 2, 2, 1],
+      [1, 2, 3, 2, 1],
+      [1, 2, 2, 2, 1],
+      [1, 1, 1, 1, 1],
+    ]);
+  });
 });
